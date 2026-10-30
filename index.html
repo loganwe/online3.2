@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coastal Sunset </title>
+  <style>
+    :root {
+      --charcoal:      #264653;
+      --persian-green: #2A9D8F;
+      --sandy-brown:   #E9C46A;
+      --sandy-orange:  #F4A261;
+      --burnt-sienna:  #E76F51;
+      --cream:         #F4F1DE;
+      --ink:           #1B2430;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 2.5rem 1.25rem 3.5rem;
+      background-color: var(--cream);
+      color: var(--ink);
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.55;
+    }
+
+    .page-label {
+      max-width: 940px;
+      margin: 0 auto 1.25rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--charcoal);
+      opacity: 0.8;
+    }
+
+    .table-wrap {
+      max-width: 940px;
+      margin: 0 auto;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #FFFFFF;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(38, 70, 83, 0.20);
+    }
+
+    th.scheme-name {
+      background-color: var(--charcoal);
+      color: var(--cream);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.85rem;
+      font-style: italic;
+      font-weight: 700;
+      font-variant: small-caps;
+      letter-spacing: 0.15em;
+      text-align: center;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.40);
+      padding: 1.15rem 1rem;
+      border-bottom: 4px solid var(--burnt-sienna);
+    }
+
+    th.col-head {
+      background-color: var(--persian-green);
+      color: #FFFFFF;
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      text-align: left;
+      padding: 0.8rem 1rem;
+      border-right: 1px solid rgba(255, 255, 255, 0.35);
+    }
+    th.col-head:last-child { border-right: none; }
+
+    td {
+      padding: 0.9rem 1rem;
+      border: 1px solid #DDD9C9;
+      font-size: 0.98rem;
+      vertical-align: middle;
+    }
+
+    td.color-name {
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.045em;
+    }
+
+    td.code {
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 0.93rem;
+      color: #33454F;
+      white-space: nowrap;
+    }
+
+    tbody tr:hover td.code,
+    tbody tr:hover td.name-plain {
+      background-color: #F6F4EA;
+    }
+
+    .swatch-charcoal      { background-color: #264653; color: #F4F1DE; }
+    .swatch-persian-green { background-color: #2A9D8F; color: #FFFFFF; }
+    .swatch-sandy-brown   { background-color: #E9C46A; color: #1B2430; }
+    .swatch-sandy-orange  { background-color: #F4A261; color: #1B2430; }
+    .swatch-burnt-sienna  { background-color: #E76F51; color: #1B2430; }
+    .swatch-cream         { background-color: #F4F1DE; color: #1B2430; }
+
+    @media (max-width: 620px) {
+      th.scheme-name { font-size: 1.35rem; letter-spacing: 0.09em; }
+      td, th.col-head { padding: 0.65rem 0.6rem; font-size: 0.85rem; }
+      td.code { font-size: 0.78rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <p class="page-label">CSS Color Notation Reference</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="scheme-name" colspan="4">Coastal Sunset</th>
+        </tr>
+        <tr>
+          <th class="col-head" scope="col">Color Name</th>
+          <th class="col-head" scope="col">Hex Value</th>
+          <th class="col-head" scope="col">RGB Value</th>
+          <th class="col-head" scope="col">HSL Value</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="color-name swatch-charcoal" scope="row">Charcoal</td>
+          <td class="code">#264653</td>
+          <td class="code">rgb(38, 70, 83)</td>
+          <td class="code">hsl(197, 37%, 24%)</td>
+        </tr>
+        <tr>
+          <td class="color-name swatch-persian-green" scope="row">Persian Green</td>
+          <td class="code">#2A9D8F</td>
+          <td class="code">rgb(42, 157, 143)</td>
+          <td class="code">hsl(173, 58%, 39%)</td>
+        </tr>
+        <tr>
+          <td class="color-name swatch-sandy-brown" scope="row">Sandy Brown</td>
+          <td class="code">#E9C46A</td>
+          <td class="code">rgb(233, 196, 106)</td>
+          <td class="code">hsl(43, 74%, 67%)</td>
+        </tr>
+        <tr>
+          <td class="color-name swatch-sandy-orange" scope="row">Sandy Orange</td>
+          <td class="code">#F4A261</td>
+          <td class="code">rgb(244, 162, 97)</td>
+          <td class="code">hsl(27, 87%, 67%)</td>
+        </tr>
+        <tr>
+          <td class="color-name swatch-burnt-sienna" scope="row">Burnt Sienna</td>
+          <td class="code">#E76F51</td>
+          <td class="code">rgb(231, 111, 81)</td>
+          <td class="code">hsl(12, 76%, 61%)</td>
+        </tr>
+        <tr>
+          <td class="color-name swatch-cream" scope="row">Cream</td>
+          <td class="code">#F4F1DE</td>
+          <td class="code">rgb(244, 241, 222)</td>
+          <td class="code">hsl(52, 50%, 91%)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
+
